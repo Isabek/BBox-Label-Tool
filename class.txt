@@ -1,3 +1,6 @@
-dog
-cat
-baby
+bus
+microbus
+minivan
+suv
+sedan
+truck
