@@ -109,6 +109,8 @@ class LabelTool():
         self.prevBtn.pack(side = LEFT, padx = 5, pady = 3)
         self.nextBtn = Button(self.ctrPanel, text='Next >>', width = 10, command = self.nextImage)
         self.nextBtn.pack(side = LEFT, padx = 5, pady = 3)
+        self.saveBtn = Button(self.ctrPanel, text='Save', width = 10, command = self.saveImage)
+        self.saveBtn.pack(side = LEFT, padx = 5, pady = 3)
         self.progLabel = Label(self.ctrPanel, text = "Progress:     /    ")
         self.progLabel.pack(side = LEFT, padx = 5)
         self.tmpLabel = Label(self.ctrPanel, text = "Go to Image No.")
