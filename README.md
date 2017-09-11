@@ -57,3 +57,11 @@ Usage
 3. After finishing one image, click 'Next' to advance. Likewise, click 'Prev' to reverse. Or, input the index and click 'Go' to navigate to an arbitrary image.
   - The labeling result will be saved if and only if the 'Next' button is clicked.
 4. To save your labeled image click Save button.
+
+Split video to images
+-------
+ffmpeg -i videofile -r 10 -f image2 images/image-%07d.png
+
+Convert Images from png to jpeg
+-------
+mogrify -path outputDir -format jpg -flatten -quality 100 -define jpeg:extent=600kb imagesDir/*.png
