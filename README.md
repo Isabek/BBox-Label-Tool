@@ -60,8 +60,12 @@ Usage
 
 Split video to images
 -------
+```bash
 ffmpeg -i videofile -r 10 -f image2 images/image-%07d.png
+```
 
 Convert Images from png to jpeg
 -------
+```bash
 mogrify -path outputDir -format jpg -flatten -quality 100 -define jpeg:extent=600kb imagesDir/*.png
+```
