@@ -61,7 +61,7 @@ Usage
 Split video to images
 -------
 ```bash
-ffmpeg -i videofile -r 10 -f image2 images/image-%07d.png
+ffmpeg -i videofile -r 10 images/image-%07d.png
 ```
 
 Convert Images from png to jpeg
